@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
+
+/* reset inicial */
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* variáveis */
+
+:root {
+    --cor-texto-01: #0A1B39;
+    --bg-01: rgba(255, 255, 255, 0.808);
+    --bg-02: #83899F;
+    --bg-03: #c7f4ff;
+    --bg-04: #dfdfdf;
+    --azul-01: #2E90FA;
+    --azul-02: #2eb9fa;
+    --verde-01: #009c0f;
+    --vermelho-01: #cc0000;
+    --vermelho-02: #e80000;
+}
+
+body {
+    padding: 2% 8%;
+    background-color: var(--bg-01);
+}
+
+p,
+div,
+form {
+    margin: 0.5em 0;
+}
+
+p {
+    color: var(--cor-texto-01);
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    display: inline-block;
+}
+
+.titulo {
+    border-bottom: 0.2em solid var(--azul-01);
+}
+
+.caixa {
+    background-color: var(--bg-04);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.mg1 {
+    margin: 0.5em 0;
+}
+
+.mg2 {
+    margin: 1em 0;
+}
+
+h1 {
+    display: inline-block;
+}
+
+.bt1 {
+    color: white;
+    padding: 0.5em;
+    background-color: var(--azul-01);
+    border: 1px solid var(--azul-02);
+    border-radius: 1em;
+    margin: 50px 0em;
+    font-weight: 600;
+}
+
+.bt1:hover {
+    background-color: var(--vermelho-01);
+    border-color: var(--vermelho-02);
+}
+
+.hl1 {
+    color: var(--verde-01);
+}
+
+input {
+    padding: 0.5em;
+    outline: none;
+    border: none;
+}
+
+button {
+    color: white;
+    padding: 0.5em;
+    background-color: var(--azul-01);
+    border: 1px solid var(--azul-02);
+    border-radius: 1em;
+    font-weight: 600;
+}
+
+button:hover {
+    color: var(--cor-texto-01);
+    background-color: transparent;
+}

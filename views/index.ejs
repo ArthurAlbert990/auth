@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="/public/stylesheet.css" rel="stylesheet" type="text/css">
 
 <head>
     <meta charset="UTF-8">
@@ -7,24 +8,37 @@
 </head>
 
 <body>
-    <% if (user) {%>
-        <h1>WELCOME BACK <%= user.username %>
-        </h1>
-        <a href="/log-out">LOG OUT</a>
-        <% } else { %>
-            <h1>please log in</h1>
-            <form action="/log-in" method="POST">
-                <label for="username">Username</label>
-                <input name="username" placeholder="username" type="text" />
-                <label for="password">Password</label>
-                <input name="password" type="password" />
-                <button>Log In</button>
-            </form>
-            <a href="/sign-up">Não possui uma conta? CADASTRAR</a>
-            <p>Conta padrão:</p>
-            <p>USER: usuario</p>
-            <p>PASSWORD: usuario</p>
-            <%}%>
+    <div class="caixa">
+        <% if (user) {%>
+            <h1 class="titulo mg1">Bem vindo, <span class="hl1">
+                    <%= user.username %>
+                </span>
+            </h1>
+            <br>
+            <div class="mg2">
+                <a class="bt1" href="/log-out">Log out</a>
+            </div>
+
+
+            <% } else { %>
+                <h1 class="titulo mg1">Por favor, realize login</h1>
+                <form action="/log-in" method="POST">
+                    <label for="username">Usuário</label>
+                    <input name="username" placeholder="username" type="text" />
+                    <label for="password">Senha</label>
+                    <input name="password" type="password" />
+                    <button>Log In</button>
+                </form>
+                <div>
+                    <p>>>> Conta padrão: usuario / usuario</p>
+                </div>
+                <br>
+                <div>
+                    <a href="/sign-up">Não possui uma conta? CADASTRAR</a>
+                </div>
+
+                <%}%>
+    </div>
 </body>
 
 </html>

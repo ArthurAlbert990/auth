@@ -23,8 +23,12 @@ const User = mongoose.model("User", new Schema({
 }))
 
 const app = express()
+
+app.use('/public', express.static('public'));
+
 app.set("views", path.join(__dirname, "views"))
 app.set("view engine", "ejs")
+
 
 app.use(session({ secret: 'dogs', resave: false, saveUninitialized: true }))
 app.use(passport.initialize())
