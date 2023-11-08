@@ -2,9 +2,6 @@
 
 Autenticação utilizando o módulo passport + NodeJS, Express e MongoDB.
 
-**Acesso online: https://auth-ll4d.onrender.com**
-
-OBS: Pode levar até 30 segundos para carregar devido ao serviço de deploy utilizado.
 
 ## 🚀 Funcionamento
 
